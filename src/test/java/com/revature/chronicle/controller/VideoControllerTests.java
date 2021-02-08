@@ -165,7 +165,7 @@ public class VideoControllerTests {
 		tagNames.add("Topic");
 		tagNames.add("Batch");
 
-		Mockito.when(tagRepo.findByNameIn(tagNames)).thenReturn(mockTags);
+		Mockito.when(tagRepo.findByTypeIn(tagNames)).thenReturn(mockTags);
 		MvcResult result = mockMvc.perform(get("/videos/available-tags")
 				.with(httpBasic("user","user")))//Assuming words separated by '+'
 				.andExpect(status().isOk())
