@@ -26,6 +26,9 @@ import com.revature.chronicle.models.Tag;
 import com.revature.chronicle.models.Video;
 import com.revature.chronicle.services.VideoService;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
